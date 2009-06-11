@@ -1,7 +1,7 @@
 module XmlFixtures
   def get_xml_fixture(filename)
     fixture_xml = ''
-    File.open('test/fixtures/xml/' + filename) do |f|
+    File.open(xml_fixture_path + filename) do |f|
       fixture_xml = f.read
     end
     return ERB.new(fixture_xml).result
@@ -12,5 +12,11 @@ module XmlFixtures
     assert_block("#{first.to_s} expected but was\n#{second.to_s}") do
       REXML::Document.new(first) == REXML::Document.new(second)
     end
+  end
+
+  protected
+
+  def xml_fixture_path
+    'test/fixtures/xml/'
   end
 end
