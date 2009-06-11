@@ -1,0 +1,11 @@
+.svn
+*.swp
+*.swo
+.irbrc
+schema.rb
+config/database.yml
+config/mongrel_cluster.yml
+log/*
+*.sqlite3
+coverage/*
+*~
