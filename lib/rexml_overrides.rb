@@ -38,7 +38,6 @@ class REXML::Element
   def get_child_list( element )
     child_elements = element.elements.to_a
     element_names = child_elements.collect(&:name)
-    raise "Had two children with the same name" if element_names.uniq.size != element_names.size
     return child_elements
   end
 end
