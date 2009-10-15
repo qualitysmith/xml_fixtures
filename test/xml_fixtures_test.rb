@@ -38,6 +38,6 @@ class XmlFixturesTest < ActiveSupport::TestCase
   protected
 
   def xml_fixture_path
-    'vendor/plugins/xml_fixtures/test/fixtures/'
+    File.join( File.dirname(__FILE__), 'fixtures' )
   end
 end

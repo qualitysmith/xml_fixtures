@@ -7,13 +7,6 @@ class RexmlOverridesTest < ActiveSupport::TestCase
       assert_equal([], root.send(:get_child_list, root) )
     end
 
-    should "raise if to children of the same name" do
-      root = REXML::Document.new('<root><child1></child1><child2></child2><child1></child1></root>').elements.first
-      assert_raise( RuntimeError ) {
-        root.send(:get_child_list, root)
-      }
-    end
-
     should "get simple set" do
       root = REXML::Document.new('<root><child1>child 1 content</child1><child2>child 2 content</child2></root>').elements.first
       set = root.send(:get_child_list, root)
