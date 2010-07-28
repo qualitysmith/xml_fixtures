@@ -6,7 +6,7 @@ require 'bundler/version'
 
 Gem::Specification.new do |s|
   s.name        = "xml_fixtures"
-  s.version     = "0.0.2"
+  s.version     = "0.0.3"
   s.author      = "QualitySmith Inc."
   s.email       = "info@QualitySmith.com"
   s.homepage    = "http://www.qualitysmith.com"

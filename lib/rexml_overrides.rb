@@ -19,12 +19,11 @@ class REXML::Element
     end
   end
 
-
   def children_look_like_an_array?
     return true if self.elements.size == 1
     return self.elements.collect(&:name).uniq.size == 1
   end
-  
+
   def array_children_equal?( another_element )
     pairs = (1..(self.elements.size)).collect {|index| [ self.elements[index], another_element.elements[index] ] }
     return pairs.all? {|pair| pair.first == pair.last and pair.first.text.try(:strip).to_s == pair.last.text.try(:strip).to_s }

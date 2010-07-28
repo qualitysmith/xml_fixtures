@@ -1,5 +1,6 @@
 require 'rexml/document'
+require 'try' if !defined?(try)
 require 'rexml_overrides'
 require 'xml_fixture_helper'
-require 'action_view/erb/util'
-ActiveSupport::TestCase.send :include, XmlFixtureHelper
+require 'erb'
+Test::Unit::TestCase.send :include, XmlFixtureHelper
