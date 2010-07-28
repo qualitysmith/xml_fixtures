@@ -6,10 +6,10 @@ require 'bundler/version'
 
 Gem::Specification.new do |s|
   s.name        = "xml_fixtures"
-  s.version     = "0.0.1"
-  s.author      = "Michael Goff"
-  s.email       = "Michael.Goff@QualitySmith.com"
-  s.homepage    = ""
+  s.version     = "0.0.2"
+  s.author      = "QualitySmith Inc."
+  s.email       = "info@QualitySmith.com"
+  s.homepage    = "http://www.qualitysmith.com"
   s.platform    = Gem::Platform::RUBY
   s.summary     = "Extends Rails to support simple xml fixtures for testing and asserts for working with them."
   s.description = "Extends Rails to support simple xml fixtures for testing and asserts for working with them."

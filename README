@@ -1,13 +1,12 @@
 XmlFixtures
 ===========
 
-Introduction goes here.
-
+Extends Rails to support simple xml fixtures for testing and asserts for working with them.
 
 Example
 =======
 
-Example goes here.
+assert_xml_equal :xml_fixture_name, "<some>XML</some>"
 
 
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+Copyright (c) 2009 QualitySmith Inc., released under the MIT license
