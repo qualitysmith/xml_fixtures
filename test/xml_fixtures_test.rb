@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class XmlFixturesTest < ActiveSupport::TestCase
+class XmlFixturesTest < Test::Unit::TestCase
   context 'get_xml_fixture' do
     should 'raise when nonsense filename' do
       assert_raise( Errno::ENOENT ) {

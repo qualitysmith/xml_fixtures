@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class RexmlOverridesTest < ActiveSupport::TestCase
+class RexmlOverridesTest < Test::Unit::TestCase
   context 'get_child_list' do
     should "be empty" do
       root = REXML::Document.new('<root></root>').elements.first
